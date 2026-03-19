@@ -1,0 +1,37 @@
+{
+  "name": "giftcardweb3",
+  "version": "1.0.0",
+  "description": "A decentralized gift card application using blockchain technology",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ..",
+    "start-node": "npx hardhat node",
+    "deploy-local": "npx hardhat run scripts/deploy.js --network localhost",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm run dev",
+    "clean": "npx hardhat clean && rm -rf node_modules && rm -rf backend/node_modules && rm -rf frontend/node_modules"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "nft",
+    "gift-cards",
+    "hardhat",
+    "nextjs"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "@openzeppelin/contracts": "^5.3.0",
+    "hardhat": "^2.25.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "ethers": "^6.15.0",
+    "express": "^5.1.0"
+  }
+}

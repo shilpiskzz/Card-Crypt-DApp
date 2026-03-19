@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Simple test to verify Tailwind is loaded */
+.test-tailwind {
+  @apply bg-red-500 text-white p-4;
+}
+
+:root {
+  --walmart-blue: #0071ce;
+  --walmart-blue-dark: #004c91;
+  --walmart-blue-light: #e6f3ff;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom Walmart blue utilities */
+.walmart-blue {
+  color: var(--walmart-blue);
+}
+
+.bg-walmart-blue {
+  background-color: var(--walmart-blue);
+}
+
+.border-walmart-blue {
+  border-color: var(--walmart-blue);
+}
